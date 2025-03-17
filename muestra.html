@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la Reserva</title>
+    <link rel="stylesheet" href="CSS/muestra.css">
+</head>
+<body>
+    <header>
+        <h1>Detalles de la Reserva</h1>
+        <img src="IMG/logo1.png" alt="Logo del Cine">
+    </header>
+    <main>
+<div class="contenedor">
+            <img src="IMG/imagen1.jpeg" alt="Imagen Izquierda" class="imagen-izquierda">
+
+
+        <section class="datos">
+            <h2>Información ingresada</h2>
+            <p><strong>Nombre Completo:</strong> <span id="nombre"></span></p>
+            <p><strong>Correo Electrónico:</strong> <span id="correo"></span></p>
+            <p><strong>Número de Teléfono:</strong> <span id="telefono"></span></p>
+            <p><strong>Fecha de Nacimiento:</strong> <span id="fecha_nacimiento"></span></p>
+            <p><strong>Dirección:</strong> <span id="direccion"></span></p>
+            <p><strong>Tarjeta de Crédito o Débito:</strong> <span id="tarjeta"></span></p>
+            <p><strong>Edad:</strong> <span id="edad"></span></p>
+            <p><strong>Película Seleccionada:</strong> <span id="pelicula"></span></p>
+            <p><strong>Fecha y Hora de la Función:</strong> <span id="fecha_funcion"></span></p>
+            <p><strong>Número de Boletos:</strong> <span id="boletos"></span></p>
+            <p><strong>Tipo de Boleto:</strong> <span id="tipo_boleto"></span></p>
+            <p><strong>Método de Pago:</strong> <span id="metodo_pago"></span></p>
+        </section>
+        <a href="index.html" class="boton">Volver al formulario</a>
+<br><br><br><br>
+<img src="IMG/imagen2.jpeg" alt="Imagen Derecha" class="imagen-derecha">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cine Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener parámetros de la URL y mostrarlos
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('nombre').textContent = params.get('nombre');
+        document.getElementById('correo').textContent = params.get('correo');
+        document.getElementById('telefono').textContent = params.get('telefono');
+        document.getElementById('fecha_nacimiento').textContent = params.get('fecha_nacimiento');
+        document.getElementById('direccion').textContent = params.get('direccion');
+        document.getElementById('tarjeta').textContent = params.get('tarjeta');
+        document.getElementById('edad').textContent = params.get('edad');
+        document.getElementById('pelicula').textContent = params.get('pelicula');
+        document.getElementById('fecha_funcion').textContent = params.get('fecha_funcion');
+        document.getElementById('boletos').textContent = params.get('boletos');
+        document.getElementById('tipo_boleto').textContent = params.get('tipo_boleto');
+        document.getElementById('metodo_pago').textContent = params.get('metodo_pago');
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0087D1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header img {
+    width: 80px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 102, 0, 0.5);
+}
+
+label {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffcc66;
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 8px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #c2cd1d;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #cc5500;
+}
+
+footer {
+    background-color: #0087D1;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.imagen-izquierda, .imagen-derecha {
+    width: 250px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    width: 50%; /* Ajusta el ancho del formulario según necesidad */
+    text-align: left;
+}
+
+
